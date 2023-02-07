@@ -11,6 +11,7 @@
 		EEDEE2F5298B79820013E565 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEE2F4298B79820013E565 /* ContentView.swift */; };
 		EEDEE2F7298B79830013E565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDEE2F6298B79830013E565 /* Assets.xcassets */; };
 		EEDEE2FA298B79830013E565 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDEE2F9298B79830013E565 /* Preview Assets.xcassets */; };
+		EEDEE301298B79900013E565 /* AdaptiveStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEE300298B79900013E565 /* AdaptiveStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EEDEE2F4298B79820013E565 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEDEE2F6298B79830013E565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDEE2F9298B79830013E565 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEDEE300298B79900013E565 /* AdaptiveStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				EEDEE2F4298B79820013E565 /* ContentView.swift */,
 				EEDEE2F6298B79830013E565 /* Assets.xcassets */,
 				EEDEE2F8298B79830013E565 /* Preview Content */,
+				EEDEE300298B79900013E565 /* AdaptiveStackView.swift */,
 			);
 			path = AdaptiveStackViewDemo;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDEE301298B79900013E565 /* AdaptiveStackView.swift in Sources */,
 				EEDEE2F5298B79820013E565 /* ContentView.swift in Sources */,
 				EEDEE2F3298B79820013E565 /* AdaptiveStackViewDemoApp.swift in Sources */,
 			);

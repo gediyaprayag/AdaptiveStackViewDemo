@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    let orientationNotification = NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)
+    @State private var orientation: UIDeviceOrientation?
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        AdaptiveStackView(
+            horizontalAlignment: .leading,
+            verticalAlignment: .top,
+            isHorizontalStack: orientation != .portrait,
+            spacing: .zero) {
+                SubViewOne()
+                SubViewTwo()
+            }
+            .foregroundColor(.white)
+            .onReceive(orientationNotification) { output in
+                if let device = output.object as? UIDevice {
+                    self.orientation = device.orientation
+                }
+            }
+    }
+}
+
+struct SubViewOne: View {
+    var body: some View {
+        ZStack {
+            Color.green.ignoresSafeArea()
+            Text("Sub View One")
+                .font(.largeTitle)
+                .padding()
+                .multilineTextAlignment(.center)
         }
-        .padding()
+    }
+}
+
+struct SubViewTwo: View {
+    var body: some View {
+        ZStack {
+            Color.blue.ignoresSafeArea()
+            Text("Sub View One")
+                .font(.largeTitle)
+                .padding()
+                .multilineTextAlignment(.center)
+        }
     }
 }
 
